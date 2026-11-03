@@ -59,5 +59,18 @@ body {
 } 
 
 section {
-  font-family: Roboto;
+  font-family: Roboto, Inter;
 } 
+
+.card col{
+  width: 300px;
+  height: 200px; /* Define una altura si quieres centrado vertical */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  /* Convertimos la tarjeta en un contenedor Flex */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  text-align: center;      /* Centra el texto interno */
+}
