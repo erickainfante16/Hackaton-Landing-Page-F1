@@ -4,7 +4,7 @@ form1.style.display = "none";
 
 function baction() {
     
-    document.getElementById("buttonaction")
+    document.getElementById("botonaction")
     form1.style.display = "block";
     alert("Por favor, rellene el formulario para suscribirse a nuestro boletin de noticias");
     
