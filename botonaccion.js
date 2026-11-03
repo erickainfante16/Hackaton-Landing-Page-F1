@@ -1,13 +1,22 @@
 
-let form1 = document.getElementById("baction");
+let form1 = document.getElementById("bAction");
 form1.style.display = "none";
 
-function baction() {
+let pascuaEgg = document.getElementById("huevo");
+pascuaEgg.style.display = "none";
+
+function bAction() {
     
-    document.getElementById("botonaction")
+    document.getElementById("botonAction")
     form1.style.display = "block";
     alert("Por favor, rellene el formulario para suscribirse a nuestro boletin de noticias");
     
+}
+
+function pascuaAction() {
+    
+    document.getElementById("pascuaEgg")
+    pascuaEgg.style.display = "block";
 }
 
 function closeForm() {

@@ -12,9 +12,9 @@
     <title>Formula 1</title>
 </head>
 <body>
-    
-    <button id="botonaccion" onclick="baction()">F1-Conecta</button>
-    <section id="baction">
+    <!-- Botón de acción -->
+    <button id="botonAccion" onclick="bAction()">F1-Conecta</button>
+    <section id="bAction">
         <div class="container text-center">
         <div class="mb-3">
         <label for="Alexander" class="form-label">Nombre</label>
@@ -32,7 +32,7 @@
     </div>
     
     </section>
-        
+        <!-- Sección de Reseñas -->
     <section id="resena">
     <div class="container-fluid">
     <div class="container text-center">
@@ -51,17 +51,32 @@
         <div class="col-3"><strong>Mercancia Original. Excelente calidad.</strong></div>
         <div class="col-3"><strong>Muchos modelos y tallas para todos.</strong></div>
     </div>
-        <div class="row">
+        <div class="row" onclick="pascuaAction()" id="pascuaEgg">
         <div class="col-3">Kevin Aldaba</div>
         <div class="col-3">Ericka Patsy </div>
         <div class="col-3">Yhibram Isai</div>
         <div class="col-3">Sofía Zambrano</div>
     </div>
+
     
     </div>
     </div>
     </section>
+        <!-- Sección de Huevo de Pascua -->
+        <section id="huevo">
+    <div class="container-fluid">
+    <div class="container text-center">
+    <div class="row">
+        <div class="col-3"><img src="kevin.jpg" alt="Kevin Aldaba"></div>
+        <div class="col-3"><img src="ericka.jpg" alt="Ericka Patsy"></div>
+        <div class="col-3"><img src="yhibram.jpg" alt="Yhibram Isai"></div>
+        <div class="col-3"><img src="sofia.jpg" alt="Sofía Zambrano"></div>
+    </div>
+    </div>
+    </div>
+        </section>
 
-    <script src="botonaccion.js"></script>
+
+    <script src="botonAccion.js"></script>
 </body>
 </html>
