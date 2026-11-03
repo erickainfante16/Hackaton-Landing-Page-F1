@@ -25,7 +25,27 @@ header{
 .navigation a:hover{
     color: #FFD700;
 }
+.navigation .login{
+    background-color: #E10600;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+.navigation .login:hover{
+    color: #fff;
+    background-color: #FF1E00;
+}
 
 footer{
     background-color: #0f0f0f;
+}
+
+.botones-footer a{
+    color: #fff;
+}
+.botones-footer a:hover{
+    color: #FFD700;
+}
+
+.copy{
+    color: #fff;
 }
