@@ -1,0 +1,15 @@
+/* KEVIN KEVIN KEVIN */
+/* ===== Kevin: Beneficios y Productos ===== */
+.beneficios__icono { 
+    font-size: 3rem; 
+}
+.productos__flecha { filter: invert(1); } /* flechas oscuras sobre fondo claro */
+.productos__card img { background: #f1f1f1; }
+
+/* ===== Kevin: Anuncio envío gratis ===== */
+.anuncio__icono {
+  font-size: 1.8rem;
+  color: #e10600; /* rojo F1 */
+}
+
+/*KEVIN KEVIN KEVIN*/
