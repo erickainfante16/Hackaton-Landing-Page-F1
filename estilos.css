@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .bi{
+    font-size: 50px !important;
+}
+.bi:hover{
+   color: #0d6efd!important;
+}
+.card{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.bg-primary {
+    color: #f4f4f4;
+    top: -142px;
+    height: 80vh;
+}
+.card-row{
+    position: relative;
+    top: 110px;
+}
+.back-container{
+ 
+    position: relative;
+    top: 100px;
+}
+.btn{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.form-control{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 0;
+    }
+
+
+    .text-contact{
+        font-size: 40px;
+    }
+.border-danger{
+    border-color: aliceblue !important;
+}
+    @media only screen and (max-width: 600px) {
+        .bg-primary{
+            height: 150vh !important;
+        }
+      }
+
+body {
+  font-family: Roboto, Inter;
+} 
+
+section {
+  font-family: Roboto, Inter;
+} 
+
+.card col{
+  width: 300px;
+  height: 200px; /* Define una altura si quieres centrado vertical */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  /* Convertimos la tarjeta en un contenedor Flex */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  text-align: center;      /* Centra el texto interno */
+}
+.btn:hover {
+    background-color: var(--negro-carbon);
+    border-color: var(--negro-carbon);
+    transform: translateY(-2px);
+}
