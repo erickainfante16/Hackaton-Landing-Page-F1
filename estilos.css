@@ -74,3 +74,8 @@ section {
   align-items: center;     /* Centra verticalmente */
   text-align: center;      /* Centra el texto interno */
 }
+.btn:hover {
+    background-color: var(--negro-carbon);
+    border-color: var(--negro-carbon);
+    transform: translateY(-2px);
+}
