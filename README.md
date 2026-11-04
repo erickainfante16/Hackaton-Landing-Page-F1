@@ -63,16 +63,16 @@ Call to Action (CTA intermedio):
 Contacto: 
   Formulario con campos estructurados (Nombre, Correo, Escudería Favorita, Mensaje) y validación frontend.Footer: Navegación secundaria, inicio de sesión rápido, enlaces a redes sociales y derechos de autor.
 
-⚙️ Funcionalidad Técnica (JavaScript)Carrito Dinámico: 
-  Manejo del DOM a través de selectores de evento click sobre botones .btn-add. Lee atributos data-name y data-price, incrementa el contador persistente del Header en tiempo real y ofrece feedback visual al usuario.
+⚙️ Funcionalidad Técnica 
   Procesamiento del Formulario: Escucha del evento submit con interceptación mediante event.preventDefault(), evitando la recarga innecesaria de la página. Los datos capturados se estructuran en un objeto JavaScript y se imprimen ordenadamente en la consola del navegador (F12) con console.table().
 
-🛠️ Stack TecnológicoHTML5: 
-  Marcado semántico y accesible (<header>, <main>, <section>, <footer>).
+🛠️ Stack Tecnológico
+  HTML5: Marcado semántico y accesible (<header>, <main>, <section>, <footer>).
   CSS3 & Bootstrap 5 (v5.3.3): Sistema de rejilla responsiva (Grid/Flexbox), utilidades de espaciado y clases personalizadas con variables CSS.
   Vanilla JavaScript (ES6+): Manipulación del DOM, eventos asíncronos y captura de formularios.
   Git & GitHub: Control de versiones colaborativo mediante flujo de ramas individuales y despliegue automatizado con GitHub Pages.
 
-🚀 Instalación y Ejecución LocalClona el repositorio en tu máquina: git clone https://github.com/erickainfante16/Hackaton-Landing-Page-F1.git
+🚀 Instalación y Ejecución LocalClona el repositorio en tu máquina: 
+    git clone https://github.com/erickainfante16/Hackaton-Landing-Page-F1.git
   Entra a la carpeta del proyecto:cd Hackaton-Landing-Page-F1
   Abre el archivo index.html en tu navegador o ejecuta la extensión Live Server en Visual Studio Code.
