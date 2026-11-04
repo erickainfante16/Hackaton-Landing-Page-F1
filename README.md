@@ -9,7 +9,7 @@ Rol en el ProyectoTareas Asignadas
   Ericka InfanteFront-end LeadHero Section (Kimi Antonelli), Diseño UI/UX y Pitch Deck Lead.
   Kevin AldabaFront-endSección de Beneficios F1 y Catálogo de Productos Más Vendidos.
   Sofia ZambranoSCRUM Master / Front-endSección Sobre Nosotros, Formulario de Contacto y Coordinación Ágil.
-  Alexander OlivieriBack-end / Front-endLógica de Carrito en JS, Salida en Consola Web, Testimonios y CTA.
+  Alexander OlivieriBack-end / Front-endLógica de boton de acción, Salida en Consola Web, Testimonios y CTA.
 
 Nuestra landing page consta de las siguientes secciones:
 Header (encabezado): logotipo, nombre del proyecto y menú de navegación.
