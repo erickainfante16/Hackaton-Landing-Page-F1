@@ -11,7 +11,7 @@ function baction() {
     
 }
 
-let easterEgg = document.getElementById("egg");
+let easterEgg = document.getElementById("huevo");
 pascuaEgg.style.display = "none";
 
 function pascuaAction() {
