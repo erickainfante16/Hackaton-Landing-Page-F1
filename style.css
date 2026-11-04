@@ -1,0 +1,379 @@
+/* =========================================
+   MERCH F1 - HOJA DE ESTILOS
+   Bootstrap 5.3
+   Tipografías: Titillium Web + Inter
+   ========================================= */
+
+/* 1. IMPORTACIÓN DE TIPOGRAFÍAS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Titillium+Web:ital,wght@1,700;1,900&display=swap');
+
+
+/* 2. VARIABLES DE COLOR */
+:root {
+    --rojo-f1: #E10600;
+    --negro-carbon: #0F0F0F;
+    --blanco: #FFFFFF;
+    --gris-claro: #F4F4F4;
+    --gris-oscuro: #1E1E1E;
+    --amarillo: #FFD700;
+
+    --fuente-titulos: 'Titillium Web', sans-serif;
+    --fuente-cuerpo: 'Inter', sans-serif;
+}
+
+
+/* 3. CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-cuerpo);
+    font-size: 16px;
+    color: var(--negro-carbon);
+    background-color: var(--gris-claro);
+    line-height: 1.6;
+}
+
+
+/* 4. TITULARES Y ENCABEZADOS */
+h1, h2, h3, h4, h5 {
+    font-family: var(--fuente-titulos);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--negro-carbon);
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+/* 5. BOTÓN PRINCIPAL F1-CONECTA */
+#botonAccion {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 35px;
+
+    background-color: var(--rojo-f1);
+    color: var(--blanco);
+
+    border: 2px solid var(--rojo-f1);
+    border-radius: 4px;
+
+    font-family: var(--fuente-titulos);
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#botonaccion:hover {
+    background-color: var(--negro-carbon);
+    border-color: var(--negro-carbon);
+    transform: translateY(-2px);
+}
+
+
+/* 6. FORMULARIO */
+#baction {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px 25px;
+
+    background-color: var(--blanco);
+    border-top: 5px solid var(--rojo-f1);
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+#baction .container {
+    max-width: 500px;
+}
+
+#baction .form-label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+
+    font-family: var(--fuente-cuerpo);
+    font-weight: 700;
+    text-align: left;
+    color: var(--negro-carbon);
+}
+
+#baction .form-control {
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+
+    font-family: var(--fuente-cuerpo);
+    font-size: 14px;
+}
+
+#baction .form-control:focus {
+    border-color: var(--rojo-f1);
+    box-shadow: 0 0 0 0.2rem rgba(225, 6, 0, 0.15);
+}
+
+#baction input[type="checkbox"] {
+    accent-color: var(--rojo-f1);
+    cursor: pointer;
+}
+
+#baction label:has(input[type="checkbox"]) {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/* 7. BOTÓN ENVIAR */
+#enviar {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+
+    background-color: var(--negro-carbon);
+    color: var(--blanco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-family: var(--fuente-titulos);
+    font-size: 17px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#enviar:hover {
+    background-color: var(--rojo-f1);
+}
+
+
+/* 8. SECCIÓN DE RESEÑAS */
+#resena {
+    padding: 60px 20px;
+    margin-top: 50px;
+
+    background-color: var(--gris-claro);
+    color: var(--negro-carbon);
+}
+
+#resena h3 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+/* 9. CALIFICACIÓN CON ESTRELLAS */
+#resena .bi-star-fill,
+#resena .bi-star-half {
+    color: var(--amarillo);
+    font-size: 25px;
+}
+
+#resena .col p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* 10. TARJETAS DE OPINIONES */
+#resena .col-3 {
+    padding: 20px;
+    margin-bottom: 15px;
+
+    background-color: var(--blanco);
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+
+    font-family: var(--fuente-cuerpo);
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+#resena .col-3:hover {
+    border-color: var(--rojo-f1);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+#resena strong {
+    font-weight: 700;
+    color: var(--gris-oscuro);
+}
+
+
+/* 11. NOMBRES DE CLIENTES */
+#resena .row:last-child .col-3 {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--gris-oscuro);
+}
+
+
+/* 12. RESPONSIVE - DISPOSITIVOS MÓVILES */
+@media (max-width: 768px) {
+
+    #baction {
+        margin: 20px 15px;
+        padding: 25px 15px;
+    }
+
+    #resena {
+        padding: 35px 15px;
+    }
+
+    #resena .col-3 {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #resena .col-3 {
+        width: 100%;
+    }
+
+    #botonaccion {
+        width: 90%;
+    }
+
+    #baction {
+        margin: 15px auto;
+    }
+}
+/* Paleta de colores */
+:root {
+    --f1-red: #E10600;
+    --f1-black: #0F0F0F;
+    --f1-white: #FFFFFF;
+  }
+  
+  /* Clases de apoyo con Bootstrap */
+  .bg-f1-black {
+    background-color: var(--f1-black) !important;
+  }
+  
+  .text-f1-red {
+    color: var(--f1-red) !important;
+  }
+  
+  .border-bottom-f1-red {
+    border-bottom: 2px solid var(--f1-red);
+  }
+  
+  /* Tipografía*/
+  .f1-title {
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: var(--f1-black);
+  }
+  
+  .f1-subtitle {
+    color: #333333;
+    font-size: 0.95rem;
+    letter-spacing: 0.8px;
+  }
+  
+  .promo-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Botón CTA */
+  .btn-f1-cta {
+    background-color: var(--f1-white);
+    color: var(--f1-black);
+    font-size: 0.8rem;
+    padding: 6px 26px;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .btn-f1-cta:hover {
+    background-color: var(--f1-red);
+    color: var(--f1-white);
+    transform: scale(1.05);
+  }
+  
+  /* Imagen y degradado de Banner */
+  .hero-banner-img {
+    max-height: 460px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+  
+  .hero-overlay {
+    height: 60%;
+    background: linear-gradient(to top, rgba(15, 15, 15, 0.95) 0%, rgba(15, 15, 15, 0.4) 40%, transparent 100%);
+  }
+  
+  .hero-title-overlay {
+    font-size: 1.45rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  }
+  
+  .hero-sub-overlay {
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Responsividad para adaptarse a celulares*/
+  @media (max-width: 768px) {
+    .f1-title {
+      font-size: 2.2rem;
+    }
+    .f1-subtitle {
+      font-size: 0.75rem;
+    }
+    .promo-text {
+      font-size: 0.75rem;
+    }
+    .hero-banner-img {
+      max-height: 300px;
+    }
+    .hero-title-overlay {
+      font-size: 1.1rem;
+    }
+    .hero-sub-overlay {
+      font-size: 0.75rem;
+    }
+  }

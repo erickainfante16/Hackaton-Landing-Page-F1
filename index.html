@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+        <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formula 1</title>
+</head>
+<body>
+    <!-- Botón de acción -->
+    <button id="botonAccion" onclick="bAction()">F1-Conecta</button>
+    <section id="bAction">
+        <div class="container text-center">
+        <div class="mb-3">
+        <label for="Alexander" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Alexander">
+        <label for="Olivieri" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Olivieri">
+        <label for="alexander@f1.com" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="alexander@f1.com">  
+        <label>
+        <input type="checkbox" name="terminos" value="aceptado" checked>
+        Acepto los términos y condiciones
+        </label>
+        <button id="enviar" onclick="closeForm()">Enviar</button>
+        </div>
+    </div>
+    
+    </section>
+        <!-- Sección de Reseñas -->
+    <section id="resena">
+    <div class="container-fluid">
+    <div class="container text-center">
+    <div class="row">
+    <h3>Reseñas de clientes</h3>
+    </div>
+        <div class="col">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            <p> 4.8/5</p></div>
+    </div>
+    <div class="row">
+        <div class="col-3"><strong>Fiables y Seguros. Excelente servicio.</strong> </div>
+        <div class="col-3"><strong>Llego rápido en solo 2 días a CDMX.</strong></div>
+        <div class="col-3"><strong>Mercancia Original. Excelente calidad.</strong></div>
+        <div class="col-3"><strong>Muchos modelos y tallas para todos.</strong></div>
+    </div>
+        <div class="row" onclick="pascuaAction()" id="pascuaEgg">
+        <div class="col-3">Kevin Aldaba</div>
+        <div class="col-3">Ericka Patsy </div>
+        <div class="col-3">Yhibram Isai</div>
+        <div class="col-3">Sofía Zambrano</div>
+    </div>
+
+    
+    </div>
+    </div>
+    </section>
+        <!-- Sección de Huevo de Pascua -->
+        <section id="huevo">
+    <div class="container-fluid">
+    <div class="container text-center">
+    <div class="row">
+        <div class="col-3"><img src="kevin.jpg" alt="Kevin Aldaba"></div>
+        <div class="col-3"><img src="ericka.jpg" alt="Ericka Patsy"></div>
+        <div class="col-3"><img src="yhibram.jpg" alt="Yhibram Isai"></div>
+        <div class="col-3"><img src="sofia.jpg" alt="Sofía Zambrano"></div>
+    </div>
+    </div>
+    </div>
+        </section>
+
+
+    <script src="botonAccion.js"></script>
+</body>
+</html>
+    <title>F1 LandinPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse align-items-center d-flex flex-row justify-content-between" id="navbarTogglerDemo01">
+                <a href="" class="logo-container">
+                    <img class="logo" src="pics/New_era_F1_logo.png" alt="Logo">
+                </a>
+                <div class="navigation d-flex gap-3 align-items-center">
+                    <a href="" class="nav-link">Nosotros</a>
+                    <a href="" class="nav-link">Contacto</a>
+                    <a href="" class="nav-link">Productos</a>
+                    <a href="" class="nav-link">
+                        <i class="fa-solid fa-cart-shopping" style="color:white"></i>
+                        Carrito
+                    </a>
+                    <a href="" class="nav-link login">Inicia Sesión</a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+     <main>
+ <!--Hero section-->
+    <section id="hero" class="w-100 p-0 m-0 overflow-hidden">
+      
+      <!--Encabezado principal (Blanco) -->
+      <div class="bg-white text-center py-4 px-3">
+        <div class="container">
+          <h1 class="f1-title display-4 fw-black m-0 text-uppercase">
+            MERCH <span class="text-f1-red">F1</span>
+          </h1>
+          <p class="f1-subtitle fw-bold text-uppercase mt-2 mb-0">
+            Tu destino para merchandising exclusivo de Formula 1
+          </p>
+        </div>
+      </div>
+
+      <!--Barra de promoción y CTA-->
+      <div class="bg-f1-black text-center py-3 px-3 border-bottom-f1-red">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+          <p class="text-white fw-bold text-uppercase promo-text mb-2">
+            ¡Regístrate ahora al Club F1 y obtiene un 10% de descuento en tu primera compra!
+          </p>
+          <a href="#contacto" class="btn btn-f1-cta rounded-pill text-uppercase fw-bold">
+            Regístrate al Club F1
+          </a>
+        </div>
+      </div>
+
+      <!--Banner Kimi Antonelli -->
+      <div class="position-relative text-center bg-black hero-banner-wrapper">
+        <img 
+          src="assets/kimi-antonelli.jpeg" 
+          alt="Kimi Antonelli Campeón F1" 
+          class="img-fluid w-100 hero-banner-img d-block"
+          loading="eager"
+        >
+        <div class="hero-overlay position-absolute bottom-0 start-0 w-100 d-flex flex-column justify-content-end align-items-center pb-3 px-3">
+          <h2 class="text-white fw-bold text-uppercase hero-title-overlay m-0">
+            ¡KIMI ANTONELLI GANA!
+          </h2>
+          <p class="text-white fw-semibold text-uppercase hero-sub-overlay m-0 mt-1">
+            ¡TÚ TAMBIÉN PUEDES VESTIRTE COMO LOS CAMPEONES!
+          </p>
+        </div>
+      </div>
+
+    </section>
+         <!--Acerca de nosotros-->
+         <link href="./css/estilos.css" rel="stylesheet">
+<section class="about-us py-5"
+    style="background-color: #1e1e1e; color: #ffffff; margin-bottom: 100px; margin-top: 100px;">
+    <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-6 text-center text-md-start">
+                <h2 class="font-weight-bold mb-4">Acerca de MerchF1</h2>
+                <p class="text-muted mb-4">Somos una PyME familiar 100% mexicana con pasion por el automovilismo y el
+                    coleccionismo</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="text-primary">Nuestra Misión</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle me-2 text-primary"></i>Entregas Rápidas</li>
+                            <li><i class="bi bi-check-circle me-2 text-primary"></i>Satisfacción del Cliente</li>
+                            <li><i class="bi bi-check-circle me-2 text-primary"></i>Colecciones Exclusivas</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <a href="#" class="btn mt-4"
+                    style="color: #ffffff; border-color: #0f0f0f; background-color: #E10600;">Conozca Más</a>
+            </div><br>
+            <div class="col-md-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSTrIgi0LjvOXBEnlPVT4ieqQChCSGthwWu_u26sD6Pg&s=10"
+                    alt="Acerca de nosotros" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="container mt-5"
+            style="margin-bottom: 50px; background-color: #1e1e1e; padding: 20px; border-radius: 10px;">
+            <div class="row row-cols-1 row-cols-md-4 g-4 card-row">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="text-center">
+                            <i class="bi bi-emoji-heart-eyes-fill"></i>
+                            <h2 class="fw-bold" style="color: #ffd700;">+ de 500</h2>
+                            <p class="text-muted">Clientes satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="text-center">
+                            <i class="bi bi-coin"></i>
+                            <h2 class="fw-bold" style="color: #ffd700;">+ de 1000</h2>
+                            <p class="text-muted">Coleccionables vendidos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="text-center">
+                            <i class="bi bi-hearts"></i>
+                            <h2 class="fw-bold" style="color: #ffd700;">+ de 300</h2>
+                            <p class="text-muted">Reseñas de más de 4 estrellas</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="text-center">
+                                <i class="bi bi-globe"></i>
+                                <h2 class="fw-bold" style="color: #ffd700;">Presente en los 32 estados</h2>
+                                <p class="text-muted">Entregas en toda la República Mexicana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+  </main>
+
+    <footer class="pt-3">
+        <div class="container d-flex justify-content-between">
+            <div class="botones-footer d-flex gap-3">
+                <a href="" class="nav-link">Iniciar Sesion</a>
+                <a href="" class="nav-link">
+                    <i class="fa-solid fa-cart-shopping" style="color:white"></i>
+                    Carrito
+                </a>
+            </div>
+            <div class="redes-sociales">
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
+                <i class="fa-brands fa-twitter" style="color: white;"></i>
+                <i class="fa-brands fa-youtube" style="color: white;"></i>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between botones-footer mt-3">
+            <a href="" class="nav-link">Inicio</a>
+            <div class="links-footer d-flex gap-3">
+                <a href="" class="nav-link">Links</a>
+                <a href="" class="nav-link">Contact</a>
+                <a href="" class="nav-link">Productos</a>
+            </div>
+            <p class="copy">&copy; 2026 MERCH F1</p>
+        </div>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7eb6f35784.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
